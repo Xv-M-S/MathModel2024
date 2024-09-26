@@ -113,7 +113,7 @@ python train.py --path 训练集路径 --save_name 保存的模型的名字  --t
 ## 预测单个CSV文件
 
 ```python
-python predict.py --model_path 模型文件 --data_path 测试数据集 --target 预测目标 --save_path 预测数据保存路径 --eval_lever 1
+python spilt_test_predict.py --model_path 模型文件 --data_path 测试数据集 --target 预测目标 --save_path 预测数据保存路径 --eval_lever 1
 ```
 
 * ​`eval_lever`​
