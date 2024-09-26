@@ -74,7 +74,9 @@ def eval(model, dataloader, target):
             rmse.append(float(loss) * pred.shape[0])
             rmse_tot += pred.shape[0]
             t_inf += time.time() - t_s
-        print('Relative Error {:.4f}%'.format(sum_error/count))
+        error = sum_error.cpu().detach().numpy()/count
+        print(error)
+        print('Relative Error {}%'.format(error))
     return np.sum(np.array(rmse)) / rmse_tot
 
 print('Loading model from {}'.format(args.model_path))

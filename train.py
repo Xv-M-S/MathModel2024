@@ -1,7 +1,7 @@
 import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--batch_size', type=int, default=1, help='batch size')
-parser.add_argument('--num_snapshot', type=int, default=10, help='number of snapshot')
+parser.add_argument('--num_snapshot', type=int, default=1, help='number of snapshot')
 parser.add_argument('--layer', type=int, default=2, help='number of layers')
 parser.add_argument('--dim', type=int, default=128, help='hidden dimension')
 parser.add_argument('--lr', type=float, default=0.001, help='learning rate')
